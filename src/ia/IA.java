@@ -10,7 +10,7 @@ public class IA {
         byte[][] pixels;        
         String[] alunos = { 
             "alan", "alessandro", "antonio", "carla", "cristiano", "emiliano", "fabios", "fabiolenzi", "fabricio", 
-            "gabriel", "graziele", "joao", "joe", "kather", "lucas", "martin", "maycon", "rubens"
+            "gabriel", "joao", "lucas", "martin", "maycon", "rubens"
         };
         String[] imagens = { "0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "a", "b", "c", "d", "e", "f", "g", "h", "i", "j"};
         String[] tipo = { "1", "2"};
