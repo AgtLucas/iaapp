@@ -16,7 +16,7 @@ class Imagem {
             especificacao = ".png";
         }
         
-        String urlImagem = "Users/AgtLucas/NetBeansProjects/ApplicationIA/imagens/" + aluno + "_" + imagem + "_" + tipo + especificacao;        
+        String urlImagem = "/Users/AgtLucas/NetBeansProjects/ApplicationIA/imagens/" + aluno + "_" + imagem + "_" + tipo + especificacao;        
         BufferedImage image = ImageIO.read(new File(urlImagem));        
         byte[][] pixels = new byte[image.getWidth()][];
         for (int x = 0; x < image.getWidth(); x++) {
@@ -168,7 +168,7 @@ class Imagem {
     };
     
     public void cabecalhoImagem(int patterns, String inputs, String outputs) throws IOException {                
-        FileWriter arq = new FileWriter("Users/AgtLucas/NetBeansProjects/ApplicationIA/_numeros.pat");
+        FileWriter arq = new FileWriter("/Users/AgtLucas/NetBeansProjects/ApplicationIA/_numeros.pat");
         PrintWriter gravarArq = new PrintWriter(arq);                        
         String cabecalho = 
                 "SNNS pattern definition file V3.2" +
@@ -189,7 +189,7 @@ class Imagem {
     };
     
     public void cabecalhoAluno(int patterns, String inputs, String outputs) throws IOException {                
-        FileWriter arq = new FileWriter("Users/AgtLucas/NetBeansProjects/ApplicationIA/_alunos.pat");
+        FileWriter arq = new FileWriter("/Users/AgtLucas/NetBeansProjects/ApplicationIA/_alunos.pat");
         PrintWriter gravarArq = new PrintWriter(arq);                        
         String cabecalho = 
                 "SNNS pattern definition file V3.2" +
@@ -216,7 +216,7 @@ class Imagem {
     
     public void imprimirImagem(byte[][] imagem, String aluno, String caracter, String tipo) throws IOException {                                 
         Imagem imp = new Imagem();
-        try (FileWriter arq = new FileWriter("Users/AgtLucas/NetBeansProjects/ApplicationIA/_numeros.pat", true)) {
+        try (FileWriter arq = new FileWriter("/Users/AgtLucas/NetBeansProjects/ApplicationIA/_numeros.pat", true)) {
             PrintWriter gravarArq = new PrintWriter(arq);
             gravarArq.printf("#Entrada: " + caracter + " - " + aluno);
             gravarArq.printf("\n");
@@ -236,7 +236,7 @@ class Imagem {
     
     public void imprimirAluno(byte[][] imagem, String aluno, String caracter, String tipo) throws IOException {                                 
         Imagem imp = new Imagem();
-        try (FileWriter arq = new FileWriter("Users/AgtLucas/NetBeansProjects/ApplicationIA/_alunos.pat", true)) {
+        try (FileWriter arq = new FileWriter("/Users/AgtLucas/NetBeansProjects/ApplicationIA/_alunos.pat", true)) {
             PrintWriter gravarArq = new PrintWriter(arq);
             gravarArq.printf("#Entrada: " + caracter + " - " + aluno);
             gravarArq.printf("\n");

@@ -14405,3 +14405,4 @@ No. of output units : 5
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 #Saída: j - rubens
 0 1 1 1 0
+
